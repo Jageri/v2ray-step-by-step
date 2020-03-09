@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tor | 新 V2Ray 白话文指南</title>
+    <meta name="description" content="v2fly社区维护的ToutyRater版新手向教程。">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.854cc347.css" as="style"><link rel="preload" href="/assets/js/app.f8a4a779.js" as="script"><link rel="preload" href="/assets/js/2.5073b0c6.js" as="script"><link rel="preload" href="/assets/js/26.adfee680.js" as="script"><link rel="prefetch" href="/assets/js/10.25e0b8f9.js"><link rel="prefetch" href="/assets/js/11.7c21c965.js"><link rel="prefetch" href="/assets/js/12.54d9efd3.js"><link rel="prefetch" href="/assets/js/13.37abdd0b.js"><link rel="prefetch" href="/assets/js/14.4e74396f.js"><link rel="prefetch" href="/assets/js/15.7427b84e.js"><link rel="prefetch" href="/assets/js/16.0ef1d842.js"><link rel="prefetch" href="/assets/js/17.86312c23.js"><link rel="prefetch" href="/assets/js/18.de676598.js"><link rel="prefetch" href="/assets/js/19.3f2c3000.js"><link rel="prefetch" href="/assets/js/20.acf8e430.js"><link rel="prefetch" href="/assets/js/21.2cb8512f.js"><link rel="prefetch" href="/assets/js/22.24650d2a.js"><link rel="prefetch" href="/assets/js/23.da2be10d.js"><link rel="prefetch" href="/assets/js/24.5ff31403.js"><link rel="prefetch" href="/assets/js/25.526f5f0c.js"><link rel="prefetch" href="/assets/js/27.49ecb91c.js"><link rel="prefetch" href="/assets/js/28.0462dbad.js"><link rel="prefetch" href="/assets/js/29.ec7d6dfe.js"><link rel="prefetch" href="/assets/js/3.b271cd3f.js"><link rel="prefetch" href="/assets/js/30.e6b10f53.js"><link rel="prefetch" href="/assets/js/31.f8a2d8f3.js"><link rel="prefetch" href="/assets/js/32.bb53833d.js"><link rel="prefetch" href="/assets/js/33.50106efc.js"><link rel="prefetch" href="/assets/js/34.0e7e7cca.js"><link rel="prefetch" href="/assets/js/35.5f76ecca.js"><link rel="prefetch" href="/assets/js/36.b810aba7.js"><link rel="prefetch" href="/assets/js/37.a7af8c78.js"><link rel="prefetch" href="/assets/js/38.89d2ed12.js"><link rel="prefetch" href="/assets/js/39.a1194bb2.js"><link rel="prefetch" href="/assets/js/4.e98b0a65.js"><link rel="prefetch" href="/assets/js/40.c378a146.js"><link rel="prefetch" href="/assets/js/41.2fcc42f1.js"><link rel="prefetch" href="/assets/js/42.5bc81253.js"><link rel="prefetch" href="/assets/js/43.21f0c1f8.js"><link rel="prefetch" href="/assets/js/44.be552a52.js"><link rel="prefetch" href="/assets/js/45.971a3bcb.js"><link rel="prefetch" href="/assets/js/46.10c7fb75.js"><link rel="prefetch" href="/assets/js/47.c5750db7.js"><link rel="prefetch" href="/assets/js/48.055c673b.js"><link rel="prefetch" href="/assets/js/49.65403989.js"><link rel="prefetch" href="/assets/js/5.0a2dd354.js"><link rel="prefetch" href="/assets/js/50.77f2a954.js"><link rel="prefetch" href="/assets/js/51.8edd1e1a.js"><link rel="prefetch" href="/assets/js/52.07c6f210.js"><link rel="prefetch" href="/assets/js/53.2cb0186e.js"><link rel="prefetch" href="/assets/js/54.ae95803b.js"><link rel="prefetch" href="/assets/js/55.5b1c5cea.js"><link rel="prefetch" href="/assets/js/56.57e9c6d9.js"><link rel="prefetch" href="/assets/js/57.0fade06e.js"><link rel="prefetch" href="/assets/js/58.9c88c782.js"><link rel="prefetch" href="/assets/js/59.492fafd3.js"><link rel="prefetch" href="/assets/js/6.0b26119f.js"><link rel="prefetch" href="/assets/js/60.5e16cb5a.js"><link rel="prefetch" href="/assets/js/61.4a32b297.js"><link rel="prefetch" href="/assets/js/62.6541db2e.js"><link rel="prefetch" href="/assets/js/63.f756b88f.js"><link rel="prefetch" href="/assets/js/64.b0734f23.js"><link rel="prefetch" href="/assets/js/65.570bfa33.js"><link rel="prefetch" href="/assets/js/66.5af85949.js"><link rel="prefetch" href="/assets/js/67.2b029844.js"><link rel="prefetch" href="/assets/js/68.e8cbb4de.js"><link rel="prefetch" href="/assets/js/69.40cba249.js"><link rel="prefetch" href="/assets/js/7.8ed857b2.js"><link rel="prefetch" href="/assets/js/70.412f7e3a.js"><link rel="prefetch" href="/assets/js/71.6e3cff2f.js"><link rel="prefetch" href="/assets/js/72.31bb80ce.js"><link rel="prefetch" href="/assets/js/73.91d44b24.js"><link rel="prefetch" href="/assets/js/74.ac3bd5ab.js"><link rel="prefetch" href="/assets/js/75.28dd3075.js"><link rel="prefetch" href="/assets/js/76.1e75e133.js"><link rel="prefetch" href="/assets/js/77.b31118a2.js"><link rel="prefetch" href="/assets/js/78.2c4ec0e4.js"><link rel="prefetch" href="/assets/js/79.1bc465b1.js"><link rel="prefetch" href="/assets/js/8.cbd83549.js"><link rel="prefetch" href="/assets/js/80.315e799e.js"><link rel="prefetch" href="/assets/js/81.a431d524.js"><link rel="prefetch" href="/assets/js/82.f1e9b482.js"><link rel="prefetch" href="/assets/js/83.bbd00f86.js"><link rel="prefetch" href="/assets/js/84.ecba4edd.js"><link rel="prefetch" href="/assets/js/85.e39bbc92.js"><link rel="prefetch" href="/assets/js/86.94b056de.js"><link rel="prefetch" href="/assets/js/87.9827b556.js"><link rel="prefetch" href="/assets/js/88.808d8688.js"><link rel="prefetch" href="/assets/js/89.fc02f709.js"><link rel="prefetch" href="/assets/js/9.4c8ac4ca.js"><link rel="prefetch" href="/assets/js/90.529bffa7.js"><link rel="prefetch" href="/assets/js/91.a4772338.js"><link rel="prefetch" href="/assets/js/92.d64b4f52.js"><link rel="prefetch" href="/assets/js/93.7cd983ec.js"><link rel="prefetch" href="/assets/js/94.1d020c3d.js"><link rel="prefetch" href="/assets/js/95.58b09c07.js"><link rel="prefetch" href="/assets/js/96.bd52296e.js"><link rel="prefetch" href="/assets/js/97.331937e8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.854cc347.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">新 V2Ray 白话文指南</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://v2fly.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  官方手册
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/advanced/tor.html" class="nav-link router-link-exact-active router-link-active">
+  zh-CN
+</a></li><li class="dropdown-item"><!----> <a href="/en_US/" class="nav-link">
+  en-US
+</a></li><li class="dropdown-item"><!----> <a href="/fa/" class="nav-link">
+  fa-IR
+</a></li><li class="dropdown-item"><!----> <a href="/ko_KR/" class="nav-link">
+  ko-KR
+</a></li><li class="dropdown-item"><!----> <a href="/ru_RU/" class="nav-link">
+  ru-RU
+</a></li><li class="dropdown-item"><!----> <a href="/vi_VN/" class="nav-link">
+  vi-VN
+</a></li><li class="dropdown-item"><!----> <a href="/fr_FR/" class="nav-link">
+  fr-FR
+</a></li></ul></div></div> <a href="https://github.com/v2fly/v2ray-step-by-step" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://v2fly.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  官方手册
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/advanced/tor.html" class="nav-link router-link-exact-active router-link-active">
+  zh-CN
+</a></li><li class="dropdown-item"><!----> <a href="/en_US/" class="nav-link">
+  en-US
+</a></li><li class="dropdown-item"><!----> <a href="/fa/" class="nav-link">
+  fa-IR
+</a></li><li class="dropdown-item"><!----> <a href="/ko_KR/" class="nav-link">
+  ko-KR
+</a></li><li class="dropdown-item"><!----> <a href="/ru_RU/" class="nav-link">
+  ru-RU
+</a></li><li class="dropdown-item"><!----> <a href="/vi_VN/" class="nav-link">
+  vi-VN
+</a></li><li class="dropdown-item"><!----> <a href="/fr_FR/" class="nav-link">
+  fr-FR
+</a></li></ul></div></div> <a href="https://github.com/v2fly/v2ray-step-by-step" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>前言</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/" class="sidebar-link">V2Ray 配置指南</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/prep/prep" class="sidebar-heading clickable"><span>开篇</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/basics/basics" class="sidebar-heading clickable"><span>基本篇</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/advanced/advanced" class="sidebar-heading clickable"><span>高级篇</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/app/app" class="sidebar-heading clickable"><span>应用篇</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/routing/routing" class="sidebar-heading clickable"><span>路由</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="tor"><a href="#tor" class="header-anchor">#</a> Tor</h1> <p>首先是科普时间，欢迎各位直接查阅维基百科 <a href="https://zh.wikipedia.org/wiki/Tor" target="_blank" rel="noopener noreferrer">Tor<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <blockquote><p>Tor 是实现匿名通信的自由软件。其名源于“The Onion Router”（洋葱路由器）的英语缩写。用户可透过 Tor 接达由全球志愿者免费提供，包含7000+ 个中继的覆盖网络，从而达至隐藏用户真实地址、避免网络监控及流量分析的目的。Tor 用户的互联网活动（包括浏览在线网站、帖子以及即时消息等通信形式）相对较难追踪。Tor 的设计原意在于保障用户的个人隐私，以及不受监控地进行秘密通信的自由和能力。</p></blockquote> <p>本篇其实是想告诉大家，V2Ray 可以和很多软件互相配合哦，这也包括通过 V2Ray 直接流入 Tor 网络。</p> <h2 id="安装-tor-软件"><a href="#安装-tor-软件" class="header-anchor">#</a> 安装 Tor 软件</h2> <h3 id="arch-linux"><a href="#arch-linux" class="header-anchor">#</a> Arch Linux</h3> <div class="language- extra-class"><pre class="language-text"><code># pacman -S tor
+</code></pre></div><h3 id="debian"><a href="#debian" class="header-anchor">#</a> Debian</h3> <div class="language- extra-class"><pre class="language-text"><code># apt install tor
+</code></pre></div><h3 id="centos"><a href="#centos" class="header-anchor">#</a> CentOS</h3> <div class="language- extra-class"><pre class="language-text"><code># yum install tor
+</code></pre></div><h2 id="修改-tor-配置"><a href="#修改-tor-配置" class="header-anchor">#</a> 修改 Tor 配置</h2> <p>于 <code>/etc/tor/torrc</code> 添加：</p> <div class="language- extra-class"><pre class="language-text"><code>ExcludeNodes {cn},{hk},{mo},{kp},{ir},{sy},{pk},{cu},{vn}
+StrictNodes 1
+</code></pre></div><h2 id="启动-tor-服务"><a href="#启动-tor-服务" class="header-anchor">#</a> 启动 Tor 服务</h2> <div class="language- extra-class"><pre class="language-text"><code># systemctl enable tor --now
+</code></pre></div><p>默认端口是在 127.0.0.1:9050 哦。</p> <h2 id="流入-tor-网络"><a href="#流入-tor-网络" class="header-anchor">#</a> 流入 Tor 网络</h2> <h3 id="通过客户端配置来达成"><a href="#通过客户端配置来达成" class="header-anchor">#</a> 通过客户端配置来达成</h3> <div class="language-json extra-class"><pre class="language-json"><code>...
+    <span class="token property">&quot;outbounds&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;protocol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;socks&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;servers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;127.0.0.1&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token number">9050</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;proxySettings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transit&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            ...
+            <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transit&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+...
+</code></pre></div><h3 id="通过服务端配置来达成"><a href="#通过服务端配置来达成" class="header-anchor">#</a> 通过服务端配置来达成</h3> <div class="language-json extra-class"><pre class="language-json"><code>...
+    <span class="token property">&quot;outbounds&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;protocol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;socks&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;servers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;127.0.0.1&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token number">9050</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+...
+</code></pre></div><h2 id="流入并流经-tor-网络"><a href="#流入并流经-tor-网络" class="header-anchor">#</a> 流入并流经 Tor 网络</h2> <p>最终流入 Tor 网络会产生一个问题哦，节点跳啊跳的，或许突然跳到的一个节点刚好就无法访问 E-Hentai 了呢。</p> <p>怎么办呢？既然关键在于一个固定的节点，那就让流入 Tor 变成流经好了，同时还要保证访问 .onion 时不会因流出 Tor 网络而导致无法访问，这里以 Shadowsocks 为最终节点。</p> <h3 id="通过客户端配置，并且由客户端流入-tor-网络来达成"><a href="#通过客户端配置，并且由客户端流入-tor-网络来达成" class="header-anchor">#</a> 通过客户端配置，并且由客户端流入 Tor 网络来达成</h3> <div class="language-json extra-class"><pre class="language-json"><code>...
+    <span class="token property">&quot;routing&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;strategy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rules&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;field&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;domain&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token string">&quot;regexp:\\.onion$&quot;</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;outboundTag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transit&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+...
+    <span class="token property">&quot;outbounds&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;protocol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;shadowsocks&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;servers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        ...
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;proxySettings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transit&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;protocol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;socks&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;servers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;127.0.0.1&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token number">9050</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transit&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+...
+</code></pre></div><h3 id="通过客户端配置，并且由服务端流入-tor-网络来达成"><a href="#通过客户端配置，并且由服务端流入-tor-网络来达成" class="header-anchor">#</a> 通过客户端配置，并且由服务端流入 Tor 网络来达成</h3> <div class="language-json extra-class"><pre class="language-json"><code>...
+    <span class="token property">&quot;routing&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;strategy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rules&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;field&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;domain&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token string">&quot;regexp:\\.onion$&quot;</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;outboundTag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transit&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+...
+    <span class="token property">&quot;outbounds&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;protocol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;shadowsocks&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;servers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        ...
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;proxySettings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transit&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            ...
+            <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transit&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+...
+</code></pre></div><p>PS：其实以 Shadowsocks 为最终节点啊，去找些免费节点什么的就可以直接拿来用呢（白嫖怪如是说道）。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/v2fly/v2ray-step-by-step/edit/transifex/zh_CN/advanced/tor.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2/25/2020, 7:28:36 AM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f8a4a779.js" defer></script><script src="/assets/js/2.5073b0c6.js" defer></script><script src="/assets/js/26.adfee680.js" defer></script>
+  </body>
+</html>
